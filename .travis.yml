@@ -16,6 +16,7 @@ deploy:
   file:
     - my-file.txt
     - $FILENAME
+    - notthere
   skip_cleanup: true
   on:
     repo: konstructs/test-repo
