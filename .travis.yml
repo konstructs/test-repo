@@ -1,6 +1,13 @@
----
-
 language: cpp
+deploy:
+  provider: releases
+  api_key:
+    secure: Pk8WsZM43lOVzbVOpL+SFgFcxgSBPF5p16o61kp3fyulJ83JE9hj2jfqJeQg1S9+VZ2zqZ6R0w3qjiVkxpYn1XLlg39dLMPP9y8kGGrKph8h8MPUDRf4JFCWXsoWKudEjlv75mCCmei5hBZZYDmJq+eiA+pASRkUP2PftNOAH3zd00ukSKjFg6hJqTMCnEWBfY5PG1TH/HJ8SYuuAtrm76sNYYBZhbqEePuU4INIuo6OHSja9ZYaN9mAW9aqmnQJN46bA4RMjaADvrjA/MI+DVbtkgYCB3ezBglbIPJL5r3AHntS/2JjRDMZ3JEmSWqp/S2RGU4gnAsWbfBDjXcESsKSgawSMW+r4UVL8VyglpNADbRIZ9C2PFA5mTorFjLZc2EEeAu4z2ZUUhAxYxeSVD57tqH8/srYjbTACFc39df0Vj9ORCDFVaUMSZCqM46kAsT7QI2gapbfDndEIsxSOsrMLX+Xj0gUlPeRkTogcYpW9WSnMt33l8H1cf8TGaDJLdbMYeFj+ZyTUUHn+CeoUWtKi7vXO7DwKuPLRP+J4dwmPs+0jGSNDVzda0YPjmFhp7hHyyfVRKUN7qlolKeKbua6BGEE5Y5fO3DMJXHW3U7g1Z98wKrd1Sll1a5CrnYmTxSD41j1LjrT5LWxEyGp/RZKkKrDLn//NrKmWxbR864=
+  file: my-file.txt
+  skip_cleanup: true
+  on:
+    repo: konstructs/test-repo
+    tags: true
 
 script:
   - true
