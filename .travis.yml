@@ -1,4 +1,12 @@
 language: cpp
+
+matrix:
+  include:
+  - os: linux
+    compiler: gcc
+  - os: linux
+    compiler: gcc
+
 deploy:
   provider: releases
   api_key:
